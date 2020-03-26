@@ -1,0 +1,23 @@
+.p {
+    padding-top: 20px;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+  text-align: center;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}

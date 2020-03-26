@@ -1,0 +1,77 @@
+{% extends 'author1/base.html' %}
+
+{% block content %}
+
+
+
+{% load static %}
+
+<p>&nbsp;</p>
+<!-- class='container-fluid px-0'
+<img class="img-fluid w-100" src="{% static 'author1/HungryEye.png' %}" alt="Hungry Eye">
+-->
+
+<!-- 
+    <div id="slides" class="carousel slide" data-ride="carousel" >
+        <img class="img-fluid w-100" src="{% static 'author1/HungryEye.png' %}" alt="Hungry Eye">
+    </div>
+    -->
+
+<div class="container-fluid">
+    <h1 class="display-3" align='center'> Robert Selkirk Knox </h1>
+    <h1>&nbsp;</h1>
+</div>
+
+
+
+<div id="slides" class="carousel slide" data-ride="carousel">
+
+    <!-- 
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1" class="active"></li>
+        <li data-target="#slides" data-slide-to="2" class="active"></li>
+    </ul>
+    -->
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img class="img-fluid w-100" src="{% static 'author1/sf-night.jpg' %}" alt="sf-night">
+        </div>
+    </div>
+</div>
+
+
+
+<p>&nbsp;</p>
+
+<div class='row padding'>
+    <div class="col-lg-6 mx-auto">
+        <p>
+            <b>Robert Selkirk Knox </b> is a Califonia based writer and the author of <i>Sirens In The Ferns.</i>
+
+            <p>
+                The story revolves around disappearing strippers, syringe toting bad guys, a remote cabin tucked away
+                in the redwoods where a young girl is being held captive and a fern garden where rectangular mounds of
+                earth prutrude beneath the fronds and shadows of the forest.
+            </p>
+            <p>
+                The first chapter is available on this web site under the fiction menu item.
+            </p>
+
+        </p>
+    </div>
+
+    <div class="col-lg-6">
+        <contianer-fluid>
+            <img class='img-fluid' src="{% static 'author1/me5.png' %}" alt="me">
+        </contianer-fluid>
+    </div>
+</div>
+
+<hr>
+
+
+
+{% endblock  %}

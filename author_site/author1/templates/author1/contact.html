@@ -1,0 +1,25 @@
+{% extends 'author1/base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h3>Stay in touch... </h3>
+        You can email me at robertselkirkknox@yahoo.com
+    </div>
+    <div>
+        If you would like to be added to the mailing list, fill out the form below.
+    </div>
+    <hr>
+</div>
+<div>
+    <form class="form-horizontal" action="">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add My Email</button>
+    </form>
+
+</div {% endblock %}
