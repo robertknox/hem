@@ -16,9 +16,17 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
+from rest_framework import routers
+from myapi import views
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     url('author1/', include('author1.urls')),
     url(r'', include('author1.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^myapi/', include(router.urls )),
+    url('myapi/',include('myapi.urls')), 
 ]

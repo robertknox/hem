@@ -14,13 +14,14 @@
     <hr>
 </div>
 <div>
-    <form class="form-horizontal" action="">
+    <form class="form-horizontal" action="/myapi/register_email" method="GET">
         <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control" id="email" name="email">
         </div>
 
-        <button type="submit" class="btn btn-primary">Add My Email</button>
+        <button type="submit" class="btn btn-primary" >Add My Email</button>
     </form>
 
 </div {% endblock %}
+
