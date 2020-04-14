@@ -32,6 +32,22 @@ def AddressInFile( request ):
 
     return HttpResponse("Email added to list.");
 
+def CreateUser(request):
+    email = request.GET["email"]
+    firstname = request.GET["firstname"]
+    lastname  = request.GET["lastname"]
+    password  = request.GET["password"]
+    username  = request.GET["username"]
+
+    user = User.objects.create_user(firstname,email, password)
+    user.first_name = firstname
+    user.last_name  = lastname
+    user.password   = password
+    user.email      = email
+    user.save()
+
+    return HttpResponse("Here in CreateUser");
+
 #    queryset = User.objects.all().order_by('-date_joined')
 #    serializer_class = UserSerializer
 #    permission_classes = [permissions.IsAuthenticated]

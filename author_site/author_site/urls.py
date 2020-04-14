@@ -17,13 +17,16 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
 from rest_framework import routers
-from myapi import views
+from myapi import views as myapi_views 
+from users import views as user_views 
+
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
+#router.register(r'users', user_views.UserViewSet)
+#router.register(r'groups', user_views.GroupViewSet)
 
 urlpatterns = [
+    url('register/', user_views.register, name='register'),
     url('author1/', include('author1.urls')),
     url(r'', include('author1.urls')),
     url(r'^admin/', admin.site.urls),

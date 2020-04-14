@@ -4,8 +4,7 @@
 {% block content %}
 <div class="container">
     <div class="jumbotron">
-        <h1>Under development.</h1>
-        <h3>Stay in touch... </h3>
+        <h1>Stay in touch... </h1>
         You can email me at robertselkirkknox@yahoo.com
     </div>
     <div>
@@ -16,6 +15,8 @@
 <div>
     <form class="form-horizontal" action="/myapi/register_email" method="GET">
         <div class="form-group">
+            <label for="name">Name</label>
+            <input type="name" class="form-control" id="name" name="name">
             <label for="email">Email address</label>
             <input type="email" class="form-control" id="email" name="email">
         </div>

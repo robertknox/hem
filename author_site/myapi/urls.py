@@ -10,4 +10,5 @@ from . import views
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('register_email', views.AddressInFile, name='register_email'),
+    path('create_user', views.CreateUser, name='user_user'),
 ]
