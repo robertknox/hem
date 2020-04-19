@@ -29,6 +29,7 @@ urlpatterns = [
     url('register/', user_views.register, name='register'),
     url('author1/', include('author1.urls')),
     url(r'', include('author1.urls')),
+    url(r'home', include('author1.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^myapi/', include(router.urls )),
     url('myapi/',include('myapi.urls')), 
